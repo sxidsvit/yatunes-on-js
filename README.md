@@ -5,4 +5,4 @@
 Practice of working with HTML5 tags audio, video, radio
 
 
-[site](https://expo.io/@sxidsvit/react-native-simple-blog-app)
+[site](http://git.lekua.in.ua/yatunes-on-js/)
