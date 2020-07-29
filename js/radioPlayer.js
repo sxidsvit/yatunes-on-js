@@ -66,4 +66,35 @@ export const radioPlayerInit = () => {
     }
   })
 
+  // ------------- Radio volume control -------------------
+
+  //  select volume controls
+  const radioVolume = document.querySelector('.radio-volume')
+  const volumeDown = document.querySelector('.radio-volume-down')
+  const volumeUp = document.querySelector('.radio-volume-up')
+
+  // smooth control of broadcasting volume
+  radioVolume.addEventListener('input', () => {
+    audio.volume = radioVolume.value / 100
+    console.log('radioVolume.value: ', radioVolume.value);
+    console.log('audio.volume: ', audio.volume);
+  })
+
+  // mute broadcasting
+  volumeDown.addEventListener('click', () => {
+    const currentVolume = radioVolume.value
+    if (audio.volume !== 0) {
+      audio.volume = 0
+      console.log('radioVolume.value: ', radioVolume.value);
+    } else {
+      audio.volume = currentVolume / 100
+    }
+  })
+
+  // maximum broadcast volume
+  volumeUp.addEventListener('click', () => {
+    radioVolume.value = 100
+    audio.volume = radioVolume.value / 100
+  })
+
 }

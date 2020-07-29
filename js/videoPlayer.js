@@ -90,6 +90,7 @@ export const videoPlayerInit = () => {
 
   volumeUp.addEventListener('click', () => {
     videoVolume.value = 100
+    videoPlayer.volume = videoVolume.value / 100
   })
 
   videoPlayer.volume = 0.3

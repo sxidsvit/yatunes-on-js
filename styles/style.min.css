@@ -759,4 +759,15 @@ input[type=range]:focus::-ms-fill-upper {
   /* margin-left: 30px !important; */
 }
 
+.radio-sound-controls-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.radio-sound-controls-wrapper .video-button.fa {
+  font-size: 48px;
+}
+
 /*# sourceMappingURL=style.min.css.map */
