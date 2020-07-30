@@ -1,6 +1,8 @@
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
 // https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Media_events
 
+import { addZero } from './utils.js'
+
 export const videoPlayerInit = () => {
 
   const videoPlayer = document.querySelector('.video-player')
@@ -36,8 +38,6 @@ export const videoPlayerInit = () => {
     videoPlayer.pause()
     videoPlayer.current = 0
   }
-
-  const addZero = n => n < 10 ? '0' + n : n
 
   videoPlayer.addEventListener('click', togglePlay)
   videoButtonPlay.addEventListener('click', togglePlay)

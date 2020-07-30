@@ -1,4 +1,4 @@
-import { audioPlayerInit } from './audioPlayer.js'
+import { musicPlayerInit } from './musicPlayer.js'
 import { radioPlayerInit } from './radioPlayer.js'
 import { videoPlayerInit } from './videoPlayer.js'
 
@@ -19,6 +19,6 @@ playerBtn.forEach((btn, i) => btn.addEventListener('click', () => {
   playerBlock[i].classList.add('active')
 }))
 
-audioPlayerInit()
-radioPlayerInit()
 videoPlayerInit()
+musicPlayerInit()
+radioPlayerInit()
