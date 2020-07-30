@@ -116,4 +116,11 @@ export const musicPlayerInit = () => {
 
   })
 
+  musicPlayerInit.stop = () => {
+    console.dir(musicPlayerInit);
+    if (!audioPlayer.paused) {
+      audioPlayer.pause()
+    }
+  }
+
 }

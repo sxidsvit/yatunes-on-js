@@ -96,6 +96,10 @@ export const videoPlayerInit = () => {
   videoPlayer.volume = 0.3
   videoVolume.value = videoPlayer.volume * 100
 
-
+  videoPlayerInit.stop = () => {
+    if (!videoPlayer.paused) {
+      videoPlayer.pause()
+    }
+  }
 
 }
